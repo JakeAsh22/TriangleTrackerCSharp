@@ -1,11 +1,13 @@
 using System;
-using System.Collections.Generic;
+using MainProgram;
 
-public class Triangle
+namespace Formula
 {
-    public int Side1;
-    public int Side2;
-    public int Side3;
+ class Triangle
+{
+     int Side1;
+    int Side2;
+     int Side3;
 
     public Triangle(int side1,int side2, int side3)
     {
@@ -33,19 +35,4 @@ public class Triangle
         }
     }
 }
-
-public class Program 
-{
-    public static void Main()
-    {
-        Console.WriteLine("Please enter the length of the first side of the triangle: ");
-        int side1 = int.Parse(Console.ReadLine());
-        Console.WriteLine("Please enter the length of the second side of the triangle: ");
-        int side2 = int.Parse(Console.ReadLine());
-        Console.WriteLine("Please enter the length of the third side of the triangle: ");
-        int side3 = int.Parse(Console.ReadLine());
-
-        Triangle userTri = new Triangle(side1,side2,side3);
-        Console.WriteLine(userTri.whichTri());
-    }
 }
