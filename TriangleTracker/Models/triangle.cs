@@ -3,7 +3,7 @@ using MainProgram;
 
 namespace Formula
 {
- class Triangle
+ public class Triangle
 {
      int Side1;
     int Side2;
